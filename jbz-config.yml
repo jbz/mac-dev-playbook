@@ -5,7 +5,8 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
 configure_sudoers: yes
-configure_terminal: yes
+# Don't do this, so terminal doesn't die during run
+configure_terminal: no
 configure_osx: yes
 configure_stdfiles: yes
 
@@ -58,18 +59,21 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps: []
-#  - chromedriver
-#  - docker
-#  - dropbox
-#  - google-chrome
-#  - handbrake
-#  - iTerm2
-#  - macvim
-#  - sequel-pro
-#  - slack
-#  - sublime-text
-#  - virtualbox
-#  - vagrant
+  - chromedriver
+  - docker
+  - dropbox
+  - google-chrome
+  - handbrake
+  - iTerm2
+  - keybase
+  - macvim
+  - private-internet-access
+  - sequel-pro
+  - slack
+  - sublime-text
+  - virtualbox
+  - viscosity
+  - vagrant
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
