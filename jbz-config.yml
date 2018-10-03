@@ -25,6 +25,7 @@ dotfiles_files:
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - awscli
+  - m-cli
   - autoconf
   - bash-completion
   - doxygen
